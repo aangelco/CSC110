@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(circle, #c2c1c1 5%, #d1d1d1 20%, white 75%);
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+  .div1 { 
+    grid-area: 1 / 1 / 13 / 13; 
+  }
+
+  .div2 { 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+
+  .div4 { 
+    grid-area: 11 / 1 / 12 / 2; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div5 { 
+    grid-area: 12 / 1 / 13 / 2; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div6 { 
+    grid-area: 10 / 1 / 11 / 2; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .div3 { 
+    grid-area: 5 / 3 / 9 / 8; 
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .iconDivSpot {
+    color:  black;
+    font-size: 30px;
+    transition: 1.5s;
+  }
+
+  .iconDivSpot:hover {
+    font-size: 33px;
+    transition: 1.5s;
+  }
+
+  .iconDivInsta {
+    color:  black;
+    font-size: 30px;
+    transition: 1.5s;
+    line-height: 0;
+  }
+
+  .iconDivInsta:hover {
+    font-size: 33px;
+    transition: 1.5s;
+  }
+
+  .iconDivLink {
+    color:  black;
+    font-size: 30px;
+    transition: 1.5s;
+  }
+
+  .iconDivLink:hover {
+    font-size: 33px;
+    transition: 1.5s;
+  }
+
+  .pic {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .picdiv {
+    height: 100%;
+    width: 100%;
+  }
+
+  .div9 { 
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 1.5s;
+    grid-area:  1 / 12 / 2 / 13; 
+  }
+
+  .div10 { 
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 1.5s;
+    grid-area: 1 / 11 / 2 / 12;
+  }
+
+  .div11 { 
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 1.5s;
+    grid-area: 1 / 10 / 2 / 11; 
+  }
+
+  .div9:hover {
+    cursor: pointer;
+    font-size: 22px;
+    text-decoration: underline;
+    transition: 1.5s;
+  }
+
+  .div10:hover {
+    cursor: pointer;
+    font-size: 22px;
+    text-decoration: underline;
+    transition: 1.5s;
+  }
+
+  .div11:hover {
+    cursor: pointer;
+    font-size: 22px;
+    text-decoration: underline;
+    transition: 1.5s;
+  }
