@@ -9,142 +9,287 @@ body {
   background-image: radial-gradient(circle, #c2c1c1 5%, #d1d1d1 20%, white 75%);
 }
 
-.parent {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+.header {
+  display: flex;
+}
+
+.pic {
+  height: 100px;
+  width: 100px;
+}
+
+.leftBox { 
+  display: flex;
+  width: 1750px;
+  justify-content: space-evenly;
+}
+
+.div3 { 
+  display: flex;
+  margin-left: 150px;
+}
+
+.noshow {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.box1 {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  margin: 15px;
+  padding: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.box2 {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  margin: 15px;
+  padding: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.box3 {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  margin: 15px;
+  padding: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.box4 {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  margin: 15px;
+  padding: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.box5 {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  margin: 15px;
+  padding: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+
+.box1:hover {
+  color: #701919;
+  cursor: default;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.box2:hover {
+  color: #701919;
+  cursor: default;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.box3:hover {
+  color: #701919;
+  cursor: default;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.box4:hover {
+  color: #701919;
+  cursor: default;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.box5:hover {
+  color: #701919;
+  cursor: default;
+  font-size: 22px;
+  transition: 1s;
+}
+
+.homeText {
+  margin-left: 75px;
+  height: 700px;
+  width: 1300px;
+  margin: 85px;
+  text-align: left;
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box3Text {
+  margin-left: 90px;
+  margin-top: 200px;
+  height: 700px;
+  width: 550px;
+  text-align: left;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box4items {
+  height: 700px;
+  width: 1300px;
+  padding: 300px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.box4container {
+  color: white;
+  padding: 15px;
+  font-size: 80px;
+  height: 90px;
+  width: 280px;
+  background-color: #702323;
+  border:5px solid #701919; 
+  animation: spinningBox 4s infinite linear;
+}
+
+
+@keyframes spinningBox {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box5items {
+  height: 700px;
+  width: 1300px;
+}
+
+.box5Text {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 33%;
+}
+
+
+.iconDivSpot {
+  display: absolute;
+  margin-left: 65px;
+  color:  black;
+  font-size: 30px;
+  transition: 1.5s;
+}
+
+.iconDivSpot:hover {
+  font-size: 33px;
+  transition: 1.5s;
+  color: #701919;
+}
+
+.iconDivInsta {
+  margin-left: 65px;
+  margin-top: 35px;
+  color:  black;
+  font-size: 30px;
+  transition: 1.5s;
+}
+
+.iconDivInsta:hover {
+  font-size: 33px;
+  transition: 1.5s;
+  color: #701919;
+}
+
+.iconDivLink {
+  margin-left: 65px;
+  margin-top: 35px;
+  color:  black;
+  font-size: 30px;
+  transition: 1.5s;
+}
+
+.iconDivLink:hover {
+  font-size: 33px;
+  transition: 1.5s;
+  color: #701919;
+}
+
+.iconlinks {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+}
+
+.mole {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #701919;
+  position: absolute;
+}
+
+.box2Text {
+  text-align: center;
+  height: 700px;
+  width: 1300px;
+}
+
+.box2pic {
+  margin-left: 100px;
+  border: 10px solid black;
+  margin-top: 100px;
+  height: 420px;
+  width: 300px;
+}
+
+.box2picAfter {
+  border: 10px solid black;
+  margin-top: 100px;
+  height: 420px;
+  width: 300px;
+  transform-origin:top left;
+  transform: rotate(12deg);
+}
+
+.animation {
+  animation: paintingFall 2s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.animationAfter {
+  animation: paintingFall2 2s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes paintingFall {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin:top left;
+    transform: rotate(12deg);
   }
 
-  .div1 { 
-    grid-area: 1 / 1 / 13 / 13; 
+}
+
+@keyframes paintingFall2 {
+  0% {
+    transfom: rotate(12deg);
+  }
+  99% {
+    margin-top: 1000px;
+  }
+  100% {
+    display: none;
   }
 
-  .div2 { 
-    grid-area: 1 / 1 / 2 / 2; 
-  }
-
-  .div4 { 
-    grid-area: 11 / 1 / 12 / 2; 
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .div5 { 
-    grid-area: 12 / 1 / 13 / 2; 
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .div6 { 
-    grid-area: 10 / 1 / 11 / 2; 
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
- 
-  .div3 { 
-    grid-area: 5 / 3 / 9 / 8; 
-    font-size: 80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .iconDivSpot {
-    color:  black;
-    font-size: 30px;
-    transition: 1.5s;
-  }
-
-  .iconDivSpot:hover {
-    font-size: 33px;
-    transition: 1.5s;
-  }
-
-  .iconDivInsta {
-    color:  black;
-    font-size: 30px;
-    transition: 1.5s;
-    line-height: 0;
-  }
-
-  .iconDivInsta:hover {
-    font-size: 33px;
-    transition: 1.5s;
-  }
-
-  .iconDivLink {
-    color:  black;
-    font-size: 30px;
-    transition: 1.5s;
-  }
-
-  .iconDivLink:hover {
-    font-size: 33px;
-    transition: 1.5s;
-  }
-
-  .pic {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .picdiv {
-    height: 100%;
-    width: 100%;
-  }
-
-  .div9 { 
-    margin-top: 20px;
-    text-align: center;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: 1.5s;
-    grid-area:  1 / 12 / 2 / 13; 
-  }
-
-  .div10 { 
-    margin-top: 20px;
-    text-align: center;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: 1.5s;
-    grid-area: 1 / 11 / 2 / 12;
-  }
-
-  .div11 { 
-    margin-top: 20px;
-    text-align: center;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: 1.5s;
-    grid-area: 1 / 10 / 2 / 11; 
-  }
-
-  .div9:hover {
-    cursor: pointer;
-    font-size: 22px;
-    text-decoration: underline;
-    transition: 1.5s;
-  }
-
-  .div10:hover {
-    cursor: pointer;
-    font-size: 22px;
-    text-decoration: underline;
-    transition: 1.5s;
-  }
-
-  .div11:hover {
-    cursor: pointer;
-    font-size: 22px;
-    text-decoration: underline;
-    transition: 1.5s;
-  }
+}
