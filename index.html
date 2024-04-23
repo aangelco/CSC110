@@ -2,9 +2,8 @@
 <html>
 
 <head>
-  <meta charset=“UTF-8”>
-  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/a584fc4e7c.js" crossorigin="anonymous"></script>
@@ -13,31 +12,104 @@
 <body>
   <script src="script.js"></script>
 
-  <div class="parent">
-    <div class="div1"> </div>
-    <div class="div2">
-      <div class="picdiv">
+    <div class="header">
+
+      <div class="rightBox">
           <image class="pic" src="Signature.png"></image>
       </div>
+      
+      <div class="leftBox">
+        
+        <div id="div1" class="box1" onclick="divClick('show1')">
+          Home
+        </div>
+      
+        <div id='div2' class='box2' onclick="divClick('show2')">
+          Photography
+        </div>
+      
+        <div id='div3' class='box3' onclick="divClick('show3')">
+          About
+        </div>
+  
+        <div id='div4' class='box4' onclick="divClick('show4')">
+          Projects
+        </div>
+  
+        <div id='div5' class='box5' onclick="divClick('show5')">
+          Mini Game
+        </div>
+        
+      </div>
+
     </div>
-    <div class="div4">
-        <a href="https://open.spotify.com/user/unvf93667yq3kxv0t97vsm8vc" target="_blank" class="fa-brands fa-spotify iconDivSpot"></a>
+
+
+    <div class='iconlinks'>
+      <div class="divSpot">
+          <a href="https://open.spotify.com/user/unvf93667yq3kxv0t97vsm8vc" target="_blank" class="fa-brands fa-spotify iconDivSpot"></a>
+      </div>
+
+      <div class="divInsta">
+        <a href="https://www.instagram.com/aangel.co/" target="_blank" class="fa-brands fa-instagram iconDivInsta"></a>
+      </div>
+
+      <div class="divLink">
+        <a href="https://www.linkedin.com/in/angel-cortez-209b95248/" target="_blank" class="fa-brands fa-linkedin iconDivLink"></a>
+      </div>
+
     </div>
-    <div class="div5">
-      <a href="https://www.instagram.com/aangel.co/" target="_blank" class="fa-brands fa-instagram iconDivInsta"></a>
+
+    <div class="div3">
+      
+      <div id='show1' class='show'>
+        
+        <div class="homeText">
+          <br><br>
+          Hey! I'm 
+          <br>
+          Angel Cortez
+        </div>
+        
+      </div>
+    
+      <div id='show2' class='noshow'>
+        <div id="donutConatiner" class="box2Text">
+          <image id="donutDiv" class="box2pic" src="Donut.jpg" onclick="start()"></image>
+        </div>
+      </div>
+      <div id='show3' class='noshow'>
+        <div class="box3Text">
+          I don't feel like giving an explanation of my life, so ill just type and hope no-one read this. No idea how long this has to be for it to look nice. Just type what's coming to mind, it's the only that makes sense to me. There isn't much time left before this is due, I wonder if it's to boring. Even if that's not the point of the project, it's only made to show mastery of what we've learned. I imagined that the website would have to be more in-depth and complicated. Glad it wasn't, because Java is something I feel I barely understand. 
+        </div>
+
+        <div class="box2Image">
+
+        </div>
+      </div>
+
+      <div id='show4' class='noshow'>
+        <div class="box4items">
+          <div class="box4container">
+            <div class="box4text">
+              Loading
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='show5' class='noshow'>
+        <div class="box5items">
+          <div class="box5Text">
+            *Just follow the dot, I'm not that smart*
+          </div>
+        </div>
+
+        <div class="mole"></div>
+        
+      </div>
+
     </div>
-    <div class="div6">
-      <a href="https://www.linkedin.com/in/angel-cortez-209b95248/" target="_blank" class="fa-brands fa-linkedin iconDivLink"></a>
-    </div>
-    <div class="div3"> 
-      Hey! I'm <br>
-      Angel Cortez 
-    </div>
-    <div class="div9"> About Me </div>
-    <div class="div10"> Photography </div>
-    <div class="div11"> Home </div>
-    </div>
-  </div>
   
 </body>
 
